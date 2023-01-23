@@ -36,8 +36,25 @@ Make sure to divide your labelled images into two different sets: 'Train' and 'T
 You can then follow along the commands provided in the:
 <a href="https://github.com/SrivathsG/Sign_detection/blob/main/2.%20Training%20and%20Detection1.ipynb">Training.ipynb</a>
 
-<h5> First requirement is download the required Object_detection model from the tensorflow model zoo from the following repository:
-  research/object_detection/g3doc/tf2_detection_zoo.md
+<h5> First requirement is download the required Object_detection model from the tensorflow model zoo from the following repository:  https://github.com/tensorflow/models</h5>
+
+![zoo](https://user-images.githubusercontent.com/91323828/214009093-f7e765d2-9960-4071-8d9a-29334e9b1fec.png)
+
+ from here you can go ahead and download the models from the research->object detection folder according to your requirements.
+
+<h3> 7th step </h3>
+  The tensorflow object detection models require us to convert the images to their compatible annotations that is in the form of TFrecords.
+  To do this you can either follow along the code lines provided by the notebook or if you wish to create your own
+  you can refer to :
+          <a href="https://pythonprogramming.net/creating-tfrecord-files-tensorflow-object-detection-api-tutorial/"> Here </a>
+  
+<h5> For the rest of the execution it would be easier to just run along the code lines</h5>
+  for fast training it is suggested to have have CUDA and CUdnn setup to utilize your GPU for the training process.
+  
+  <h5> You can check out the few errors i had resolved during the making of this project, if you        encounter the same you can follow along
+      <a href= "https://github.com/SrivathsG/Sign_detection/blob/main/Error%20Guide.md"> Error_guide.md </a></h5>
+  
+  
 
 
 

@@ -60,7 +60,7 @@ KeyError: 'ThumbsDown' # YOUR LABEL HERE
 <pre> pip show tensorflow </pre>
 
 if you dont have the latest version dowload the tensorflow module using the command:
-<pre> pip install tensotflow </pre>
+<pre> pip install tensorflow </pre>
  Make sure you are not using the tensorflow module during the process of reinstallation.
  
 

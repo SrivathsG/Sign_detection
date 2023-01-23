@@ -45,6 +45,19 @@ KeyError: 'ThumbsDown' # YOUR LABEL HERE
 <b>Error:</b>CUBLAS_STATUS_ALLOC_FAILED or CUDNN_STATUS_ALLOC_FAILED <br/>
 <b>Solution:</b> This is because the available VRAM on your machine is completely consumed and there is no more memory available to train. Quit all of your Python programs and stop your Jupyter Notebook server to free up the VRAM and run the command again. 
 
+<h4><b>ERROR:</b></h4><h5> 'Did not find the input files matching the glob pattern' :</h5>
+ Encountered this error in the process of training, when i tried to train my model using the data of the format .tfrecords rather than .records,
+ Although this shouldnt have caused an issue, I am still trying to determine the reason. 
+ but for the convinience i have used data set with '<b> .records </b> extension.
+ 
+ <h4><b>ERROR:</b></h4>  <h5> 'Use tf.cast instead' </h5>
+  Encoutered this error when the my TFrecords were empty (0kB). This happened because i had my images in the wrong folder while creating the TFrecords. So, while creation when the code was looking for the images in the folder it didnt find any which ended up creating empty TFrecord files.
+  
+ In the process i also found many errors similar to   object named "xxxx" not found:
+ If this happens with tensorflow obects, that means the 
+ 
+
+
 
 
 Template

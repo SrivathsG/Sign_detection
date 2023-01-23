@@ -51,10 +51,17 @@ KeyError: 'ThumbsDown' # YOUR LABEL HERE
  but for the convinience i have used data set with '<b> .records </b> extension.
  
  <h4><b>ERROR:</b></h4>  <h5> 'Use tf.cast instead' </h5>
-  Encoutered this error when the my TFrecords were empty (0kB). This happened because i had my images in the wrong folder while creating the TFrecords. So, while creation when the code was looking for the images in the folder it didnt find any which ended up creating empty TFrecord files.
+  Encoutered this error when the my TFrecords were empty (0kB).During the process of training it was stuck at this command and not proceeding. This happened because i had my images in the wrong folder while creating the TFrecords. So, while creation when the code was looking for the images in the folder it didnt find any which ended up creating empty TFrecord files.
   
  In the process i also found many errors similar to   object named "xxxx" not found:
- If this happens with tensorflow obects, that means the 
+ If this happens with tensorflow obects, that means the tensorflow module wasnt installed properly. make sure to you have downloaded tensorflow -gpu and tensorflow with  of the latest version.
+ 
+ to check the version of your tensorflow use the command:
+<pre> pip show tensorflow </pre>
+
+if you dont have the latest version dowload the tensorflow module using the command:
+<pre> pip install tensotflow </pre>
+ Make sure you are not using the tensorflow module during the process of reinstallation.
  
 
 
